@@ -1,0 +1,11 @@
+<h1>Chercher votre film</h1>
+
+  <%= form_for @search_string do |f| %>
+          <p>
+             <%= f.text_field :search %>
+           </p>
+
+           <p>
+             <%= f.submit 'Rechercher', class: "success button" %>
+           </p>
+             <% end %>
